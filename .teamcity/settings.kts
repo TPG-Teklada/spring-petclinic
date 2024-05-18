@@ -52,7 +52,7 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "+:target/*.jar"
+    artifactRules = "+:target/*.jar => output.jar"
     publishArtifacts = PublishMode.SUCCESSFUL
 
     params {
